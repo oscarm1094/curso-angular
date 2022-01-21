@@ -1,2 +1,18 @@
 <h1>Hola, bienvenidos al curso de angular</h1>
 <h2>Nombre: Oscar Montalvo</h2>
+
+<h2>Tarea del cronometro</h2>
+<p class="title">Componente contador</p>
+<app-cronometro [minutes]="22"
+                [segundo]="30"
+                (markTime)="addToTimeStamps($event)"
+                (clearTimeLogs)="clearTimeStamps()"></app-cronometro>
+<div class="container pt-2">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let time of timeStamps">
+        <span>Timer: </span>{{time * 1000 | date:'mm:ss'}}
+      </li>
+    </ul>
+  </div>
+</div>
