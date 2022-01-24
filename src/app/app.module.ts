@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AcumuladorComponent } from './acumulador/acumulador.component';
 import { CronometroComponent } from './cronometro/cronometro.component';
+import { CabeceraComponent } from './cabecera/cabecera.component';
+import { MenuizqComponent } from './menuizq/menuizq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcumuladorComponent,
-    CronometroComponent
+    CronometroComponent,
+    CabeceraComponent,
+    MenuizqComponent
   ],
   imports: [
     BrowserModule,
